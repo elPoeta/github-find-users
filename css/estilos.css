@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+.header{
+    margin-bottom: 1%;
+}
+.header, footer{
+    padding: 10px;
+    background-color: #06c;
+}
+.header h1{
+    margin-left: 20%;
+    font-size: 2.5em;
+}
+
+.header h1, footer p{
+    color: #fff;
+}
+.container{
+    display: grid;
+    grid-template-columns : 1fr;
+    grid-gap: 20px;
+    width: 60%;
+    margin: 0 auto;
+}
+.search-bar{
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.search-bar h2{
+    font-size: 2em;
+}
+.search-bar h2, .search-bar p{
+    padding-bottom: 5px;
+}
+.search-bar p{
+    font-size: 1.6em;
+    color: rgb(155, 152, 152);
+}
+.search-bar form input{
+    padding: 10px;
+    width: 100%;
+}
+#searchUser:focus{
+    border: 3px solid #06c;  
+}
+
+.card-profile{
+    
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 15px;
+  
+}
+.avatar{
+    grid-column: 1 / 1;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px auto;
+   
+}
+.avatar img{
+    box-sizing: border-box;
+    width: 100%;
+}
+.avatar a{
+    text-decoration: none;
+    grid-row: 2 / 2;
+    padding: 8px;
+    background: #06c;
+    border-radius: 25px;
+    color: #fff;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.avatar a:hover{
+    cursor: pointer;
+    background: rgba(0, 102, 204, 0.575);
+}
+.items{
+    display: grid;
+    grid-column: 2 / -1; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 200px;;
+
+}
+.items ul{
+    list-style: none;
+}
+
+.badge{
+   display: inline-block;
+   padding: 5px;
+   color: #000;
+   font-size: .8em;
+}
+.badge-repos{
+    background: mediumblue;
+    border-radius: 5px;
+}
+
+.badge-gists{
+    background: lightslategrey;
+    border-radius: 5px;
+}
+
+.badge-followers{
+    background: seagreen;
+    border-radius: 5px;
+}
+
+.badge-following{
+    background: royalblue;
+    border-radius: 5px;
+}
+.list-group{
+    grid-column: 1 /-1;
+    grid-row: 2 / 2;
+}
+.list-group-item{
+    border: 1px solid #ccc;
+    padding: 9px;
+    color: rgb(155, 152, 152);
+}
+footer{
+    border-top: 1px solid #ccc;
+    margin-top : 2%;
+  
+}
+footer p{
+    text-align: center;
+    font-size: 1.1em;
+}
