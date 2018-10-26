@@ -97,7 +97,7 @@
 .badge{
    display: inline-block;
    padding: 5px;
-   color: #000;
+   color: #fff;
    font-size: .8em;
 }
 .badge-repos{
@@ -128,6 +128,27 @@
     padding: 9px;
     color: rgb(155, 152, 152);
 }
+
+.card-repos{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    padding: 10px;
+    
+}
+#repos{
+    border: 1px solid #ccc;
+}
+h3{
+    font-size: 1.4em;
+    padding: 10px;
+}
+.name-repo a{
+    text-decoration: none;
+    color:rgb(73, 73, 73);
+    font-size: 1.2em;
+}
+
 footer{
     border-top: 1px solid #ccc;
     margin-top : 2%;

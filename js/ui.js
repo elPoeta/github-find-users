@@ -29,18 +29,20 @@ class UI {
     }
     static showRepos(repos) {
         console.log(repos);
-        let template = 
-        `<div class="card-repo">
-        ${repos.map(repo => {
-         `<div class="repo-url">
-         <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-         </div>   
-         <ul class="repo-items">
-              <li class="badge-repos">Stars: ${repo.stargazers_count}</li>
-              <li class="badge-gists">Watchers: ${repo.watchers_count}</li>
-              <li class="badge-followers">Forks: ${repo.forks_count}</li>
-           </ul>`
-        }).join('')}</div>`;            
+        let template = '';
+        repos.forEach((repo) => {
+            template += `<div class="card-repos">
+            <div class="name-repo">
+            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+            </div>
+            <ul class="list-repos">
+            <li class="badge badge-repos">Stars: ${repo.stargazers_count}</li>
+            <li class="badge badge-gists">Watchers: ${repo.watchers_count}</li>
+            <li class="badge badge-followers">Forks: ${repo.forks_count}</li>
+            </ul>
+            </div>
+            `;
+        });          
         document.querySelector('#repos').innerHTML = template;
 
     }
